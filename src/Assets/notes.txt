@@ -1,0 +1,82 @@
+import json
+
+import telebot
+import requests
+from PIL import Image
+from urllib.request import urlopen
+
+from config import bot
+
+
+class Animals():
+    def __init__(self, message):
+        self.message = message
+
+
+    def random(self, api, key, type = 'picture'):
+        if self.message.chat.type != 'group':
+            return None
+
+        response = requests.get(api, headers={
+            'Accept-Language': 'en-US;q=0.7,en;q=0.3',
+            'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 7.1; Trident/5.0)'
+        })
+        source = str(response.json()[key]).replace(r'\\', " ")
+        img = Image.open(urlopen(source))
+
+        print(source)
+        bot.send_photo(self.message.chat.id, img, caption=f"<a href='{source}'>A random {type} just for you!</a>", parse_mode='html')
+
+
+Bla bla bla. Um, I dont know what exactly I should say. Stop, what are u doing there! Its my notes! :|
+
+
+f'Hello, {message.from_user.first_name}!\n\n'
+                                      f'The bot - Randomity sends random pictures depending on the selected folder. '
+                                      f'All of the possible folders are shown below.\n\n'
+                                      f'/cat - cats pictures\n'
+                                      f'/dog - dogs pictures\n'
+                                      f'/duck - ducks pictures\n'
+                                      f'/fox - foxes pictures\n'
+                                      f'/neko - neko-tyans pictures\n\n'
+                                      f"You can add the bot to your group or use it in PM. "
+                                      f"<b>The Randomity doesn't need any admin rights in a group!</b>\n\n"
+                                      f'Thanks for using my service :)', parse_mode='html')
+
+
+
+
+
+<div align="center">
+  <img src="https://i.postimg.cc/nLWVGbm5/Randomity.png">
+  <b>A little randomness for your group!</b>
+</div>
+
+<hr>
+
+<h2>What is this?</h2>
+An open-source bot Randomity for the Telegram.
+It's high quality managment of random pictures. The Randomity can entertain your group's members with funny photos
+on different topics.
+
+<h2>Features</h2>
+The Randomity has:
+
+- cats pictures <i>(command: /cat)</i>
+- dogs pictures <i>(command: /dog)</i>
+- ducks pictures <i>(command: /duck)</i>
+- foxes pictures <i>(command: /fox)</i>
+- neko-tyans pictures <i>(command: /neko)</i>
+
+All of the possible commands are next to the each feature.
+
+<h2>Something about using</h2>
+You can add the bot to your group or use it in your PM. <b>The Randomity doesn't need any admin rights in a group!</b>
+
+<hr>
+
+<div align="center">
+  <b>Thanks for using my service :)</b>
+  <br>
+  <b>With ❤️ from artndev</b>
+</div>
