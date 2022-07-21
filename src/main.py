@@ -16,26 +16,32 @@ def cat(message):
                                       f"<b>The Randomity doesn't need any admin rights in a group!</b>\n\n"
                                       f'Thanks for using my service :)', parse_mode='html')
 
+
 # random animals
 @bot.message_handler(commands=['cat'])
 def cat(message):
     Randomity(message).get_random('https://aws.random.cat/meow', 'file')
 
+
 @bot.message_handler(commands=['dog'])
 def dog(message):
     Randomity(message).get_random('https://dog.ceo/api/breeds/image/random', 'message')
+
 
 @bot.message_handler(commands=['duck'])
 def duck(message):
     Randomity(message).get_random('https://random-d.uk/api/random', 'url')
 
+
 @bot.message_handler(commands=['fox'])
 def fox(message):
     Randomity(message).get_random('https://randomfox.ca/floof/', 'image')
+
 
 # random tyan
 @bot.message_handler(commands=['neko'])
 def neko(message):
     Randomity(message).get_random('http://api.nekos.fun:8080/api/neko', 'image')
+
 
 bot.polling(none_stop=True)

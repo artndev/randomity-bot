@@ -2,8 +2,10 @@ import requests
 from Config.config import bot
 
 class Randomity():
+
     def __init__(self, message):
         self.message = message
+
 
     def get_random(self, api, key, type = 'picture'):
         if self.message.chat.type not in ['group', 'private']:
