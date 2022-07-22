@@ -6,7 +6,6 @@ class Randomity():
     def __init__(self, message):
         self.message = message
 
-
     def get_random(self, api, key):
         if self.message.chat.type not in ['group', 'private']:
             return None
@@ -19,5 +18,5 @@ class Randomity():
 
         sample_after = open('Assets/sample.jpg', 'rb')
         bot.send_photo(self.message.chat.id, sample_after,
-                       caption=f"A random picture just for you, {str(self.message.from_user.first_name).capitalize()}!",
+                       caption=f"A random picture just for you, {str(self.message.from_user.first_name).title()}!",
                        parse_mode='html')
