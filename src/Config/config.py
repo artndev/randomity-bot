@@ -1,5 +1,5 @@
 import telebot
 
-token = "<your-token>"
-bot = telebot.TeleBot(token)
+TOKEN = "<your-token>"
+bot = telebot.TeleBot(TOKEN)
 
