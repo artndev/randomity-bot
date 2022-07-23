@@ -18,11 +18,11 @@ The Randomity has:
 - dogs pictures 
   - command: /dog
 - ducks pictures 
-  - <i>command: /duck</i>
+  - command: /duck
 - foxes pictures 
-  - <i>command: /fox</i>
+  - command: /fox
 - neko-tyans pictures 
-  - <i>command: /neko</i>
+  - command: /neko
 
 <h2>Something about using</h2>
 If you are interested in the Randomity, you can invite it by this <a href="https://t.me/a_RandomityBot">link</a>.
