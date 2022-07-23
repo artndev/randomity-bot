@@ -31,7 +31,5 @@ You can add the bot to your group or use it in your PM. <b>The Randomity doesn't
 <hr>
 
 <div align="center">
-  <b>Thanks for using my service :)</b>
-  <br>
   <b>With ❤️ from artndev</b>
 </div>
