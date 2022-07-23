@@ -14,9 +14,9 @@ on different topics.
 The Randomity has:
 
 - cats pictures 
-  - <i>command: /cat</i>
+  - command: /cat
 - dogs pictures 
-  - <i>command: /dog</i>
+  - command: /dog
 - ducks pictures 
   - <i>command: /duck</i>
 - foxes pictures 
