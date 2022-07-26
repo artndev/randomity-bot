@@ -14,15 +14,15 @@ on different topics.
 The Randomity has:
 
 - cats pictures 
-  - <i>command: /cat</i>
+  - command: /cat
 - dogs pictures 
-  - <i>command: /dog</i>
+  - command: /dog
 - ducks pictures 
-  - <i>command: /duck</i>
+  - command: /duck
 - foxes pictures 
-  - <i>command: /fox</i>
+  - command: /fox
 - neko-tyans pictures 
-  - <i>command: /neko</i>
+  - command: /neko
 
 <h2>Something about using</h2>
 If you are interested in the Randomity, you can invite it by this <a href="https://t.me/a_RandomityBot">link</a>.
@@ -31,7 +31,5 @@ You can add the bot to your group or use it in your PM. <b>The Randomity doesn't
 <hr>
 
 <div align="center">
-  <b>Thanks for using my service :)</b>
-  <br>
   <b>With ❤️ from artndev</b>
 </div>
