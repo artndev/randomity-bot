@@ -11,11 +11,11 @@ def cat(message):
     bot.send_message(message.chat.id, f'Hello, {message.from_user.first_name}!\n\n'
                                       f"It's high quality managment of random pictures. "
                                       f"The Randomity can entertain your group's members with funny photos on different topics which are shown below. \n\n"
-                                      f'• cats pictures <i>(command: /cat)</i>\n'
-                                      f'• dogs pictures <i>(command: /dog)</i>\n'
-                                      f'• ducks pictures <i>(command: /duck)</i>\n'
-                                      f'• foxes pictures <i>(command: /fox)</i>\n'
-                                      f'• neko-tyans pictures <i>(command: /neko)</i>\n\n'
+                                      f'• cats pictures (command: /cat)\n'
+                                      f'• dogs pictures (command: /dog)\n'
+                                      f'• ducks pictures (command: /duck)\n'
+                                      f'• foxes pictures (command: /fox)\n'
+                                      f'• neko-tyans pictures (command: /neko)</i>\n\n'
                                       f"You can add the bot to your group or use it in your PM. "
                                       f"<b>The Randomity doesn't need any admin rights in a group!</b>\n\n"
                                       f'Thanks for using my service :)', parse_mode='html')
