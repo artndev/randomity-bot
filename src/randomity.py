@@ -17,6 +17,5 @@ class Randomity():
             sample.write(source.content)
 
         sample_after = open('Assets/sample.jpg', 'rb')
-        bot.send_photo(self.message.chat.id, sample_after,
-                       caption=f"A random picture just for you, {str(self.message.from_user.first_name).title()}!",
-                       parse_mode='html')
+        return sample_after
+
