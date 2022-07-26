@@ -1,5 +1,9 @@
 from randomity import Randomity
-from Config.config import bot
+from Config.config import TOKEN
+import telebot
+
+# bot token
+bot = telebot.TeleBot(TOKEN)
 
 # start
 @bot.message_handler(commands=['start'])

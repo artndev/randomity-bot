@@ -1,5 +1,5 @@
 import requests
-from Config.config import bot
+from main import bot
 
 class Randomity():
 
